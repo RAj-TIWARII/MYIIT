@@ -115,7 +115,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#145277", en
 
 #scroll-to-top {
     position: fixed;
-    left: 95%;
+    left: 90%;
     bottom: 50px;  /* You can adjust the value as per your preference */
     z-index: 999;
     display: none;  /* Initially hidden */
