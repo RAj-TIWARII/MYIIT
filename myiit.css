@@ -33,37 +33,7 @@ html {
 	opacity: 0;
   }
   
- .classes{
-	width: 100px;
-	height: 200px;
-	background-image: url("Images/online-class.jpg");
-	background-size: cover;
-
- }
-
- .batches{
-	width: 100px;
-	height: 200px;
-	background-image: url("Images/batch.jpg");
-	background-size: cover;
-
- }
-
- .practical{
-	width: 100px;
-	height: 200px;
-	background-image: url("Images/prectical.jpg");
-	background-size: cover;
-
- }
-
- .dgtlBooks{
-	width: 100px;
-	height: 200px;
-	background-image: url("Images/digitalbook.png");
-	background-size: cover;
-
- }
+ 
 
  .address{
 	border: solid gray;
