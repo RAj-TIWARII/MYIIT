@@ -15,6 +15,12 @@ html {
 
  }
 
+.PPhr{
+	width: 100px;
+	height: 5px;
+	color: gray;
+}
+
  .carousel-item {
 	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
