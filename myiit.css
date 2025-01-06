@@ -17,8 +17,10 @@ html {
 
 .PPhr{
 	width: 100px;
-	height: 5px;
-	color: gray;
+	height: 9px;
+	color: black;
+	
+	text-align: center 
 }
 
  .carousel-item {
