@@ -1,5 +1,7 @@
-html {
+html,body {
     scroll-behavior: smooth;
+    text-align: justify;
+
 }
 
 
