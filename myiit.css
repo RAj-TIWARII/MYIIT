@@ -199,4 +199,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#145277", en
   margin-bottom: 10px;
 }
 
+
+.hr{
+  width:180px;
+  height: 2px;
+  background-color: rgb(49, 49, 49);
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+
       
