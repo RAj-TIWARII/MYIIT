@@ -1,7 +1,5 @@
 html {
     scroll-behavior: smooth;
-    text-align: justify; 
-	
 }
 
 
@@ -14,14 +12,6 @@ html {
 
 
  }
-
-.PPhr{
-	width: 100px;
-	height: 9px;
-	color: black;
-	
-	text-align: center 
-}
 
  .carousel-item {
 	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
@@ -100,3 +90,16 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#145277", en
     z-index: 999;
     display: none;  /* Initially hidden */
 }
+
+.slidemenu{
+    width: 210px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.925);
+    position: fixed;
+    margin-top: 62px;
+    display: none;
+    
+}
+
+
+      
