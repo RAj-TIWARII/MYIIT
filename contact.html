@@ -203,7 +203,7 @@ $(document).ready(function(){
                             <option value="Dgtlmarketing">Digital Marketing</option>
                         </select> <br>
                         <textarea name="comments" id="" class="m-3 w-75" placeholder="Message" rows="3" cols="30"></textarea> <br> 
-                        <button class="btn btn-dark border border-secondary m-4">Submit</button>
+                        <button class="btn btn-dark border border-secondary m-4"  data-bs-toggle="modal" data-bs-target="#Submit">Submit</button>
 
                 </form>
                 </div>
@@ -214,6 +214,41 @@ $(document).ready(function(){
         </div>
         </div>
      </div>
+
+
+
+       <!--------------   # Submit Popup Modal   --------------->
+
+
+     <div class="modal" id="Submit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!---------   # SUBMIT POPUP HEAD  ------->
+                <div class="modal-header">
+                    <h4> Thank You for Your Enquiry! </h4>
+                    <img class="w-50" src="Images/submitform.gif" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+
+                <!---------   #  SUBMIT POPUP BODY  ------->
+                <div class="modal-body" style="text-align: justify;">
+                    We appreciate your interest in MyIIT Institute. Our team will review your details and reach out to you shortly. Stay tuned, and we’re excited to help you shape your IT career!
+                </div>
+
+                <!---------   #  SUBMIT POPUP FOOTER  ------->
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><a class="text-decoration-none text-white" href="about.html">Close</a></button>
+                </div>
+
+
+            </div>
+        </div>
+     </div>
+
+
+    
 
      <!-------------    # FOOTER SECTION       --------------->
 
