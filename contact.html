@@ -3,62 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - MY-IIT</title>
-    <link rel="stylesheet" href="myiit.css">
-    <link rel="stylesheet" href="script.js">
-    <link rel="icon" href="Images/fevicon.jpg">  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Contact US - MYIIT</title>
+    <!--  Favicon Icon   -->
+      <link rel="icon" href="Images/Icon.jpg">
+    <!--  Bootstrap CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--  Rwmix Icons  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <!-- JQuery CDN  -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    
+     <!-----------   # INFO AND CARDS ----------->
     <style>
-        /* Custom CSS to handle responsive behavior */
-        @media (max-width: 993px) {
-            .menu-icon {
-                display: block;
-                cursor: pointer;
-            }
-
-            .navbar-nav {
-                display: none;
-            }
-
-            .btn-container {
-                display: none;
-            }
-
-            .headicon {
-                display: block;
-            }
-
-            .headertezt {
-                display: none;
-            }
-        }
-
-        @media (min-width: 994px) {
-            .menu-icon {
-                display: none;
-            }
-
-            .navbar-nav {
-                display: flex;
-            }
-
-            .btn-container {
-                display: flex;
-            }
-
-            .headicon {
-                display: block;
-            }
-        }
-
-
-          body {
+        body {
             font-family: Arial, sans-serif;
             background-color: #9da1a5ab;
+            text-align: justify;
         }
         .info-section {
             display: flex;
@@ -149,212 +115,165 @@
         }
     </style>
 
-       <script>
+
+     <!---------- SIDE NAV BAR --------->
+<style>
+    /*  handle responsive behavior */
+    @media (max-width: 993px) {
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+
+        .navbar-nav {
+            display: none;
+        }
+
+        .btn-container {
+            display: none;
+        }
+
+        .headicon {
+            display: block;
+        }
+
+        .headertezt {
+            display: none;
+        }
+    }
+
+    @media (min-width: 994px) {
+        .menu-icon {
+            display: none;
+        }
+
+        .navbar-nav {
+            display: flex;
+        }
+
+        .btn-container {
+            display: flex;
+        }
+
+        .headicon {
+            display: block;
+        }
+    }
+</style>
+
+<!---------- DROP DOWN --------->
+    
+   <script>
 $(document).ready(function(){
-  $(".navmenu").click(function(){
-    $(".slidemenu").fadeToggle(300);
+$(".navmenu").click(function(){
+$(".slidemenu").fadeToggle(300);
+});
+});
+   </script>
+
+<script>
+$(document).ready(function(){
+  $("hidenav").click(function(){
+    $(".slidemenu").hide(300);
   });
 });
        </script>
-
-<script>
-    $(document).ready(function(){
-      $("hidenav").click(function(){
-        $(".slidemenu").hide(300);
-      });
-    });
-           </script>
-
+   
 </head>
 
+
 <body>
-    
-    <!-- Top Navbar -->
-    <div class="container-fluid header top-navbar sticky-top bg-white">
-        <div class="container-fluid header sticky-top">
-            <nav class="navbar navbar-expand navbar-light p-2 sticky-top">
-                <a href="index.html"><img class="pe-5 headicon" src="Images/headicon.png" alt=""></a>
 
-                <!-- Menu icon on small screens -->
-                <div class="menu-icon ms-auto">
-                    <i class="ri-menu-line navmenu"  style="font-size: 2rem; margin-left: 60px;"></i>
-                </div>
+  <!-- Top Navbar -->
+  <div class="container-fluid header top-navbar sticky-top bg-white">
+    <div class="container-fluid header sticky-top">
+        <nav class="navbar navbar-expand navbar-light p-2 sticky-top">
+            <a href="index.html"><img class="pe-5 headicon" src="Images/headicon.png" alt=""></a>
 
-                <!-- Navbar Links -->
-                <ul class="navbar-nav p-2 fw-bold headertezt">
-                    <li class="nav-item me-4">
-                        <a class="text-dark text-decoration-none" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="text-dark text-decoration-none" href="about.html">ABOUT US</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="text-dark text-decoration-none" href="contact.html">COMPLAINT</a>
-                    </li>
-                    <li class="nav-item me-4 dropdown">
-                        <a class="text-dark text-decoration-none dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            COURSES
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li>
-                            <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li>
-                            <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li>
-                            <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="text-dark text-decoration-none" href="#">PLACEMENT</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="text-dark text-decoration-none" href="contact.html">CONTACT US</a>
-                    </li>
-                </ul>
-                
-                <!-- Buttons (visible only on large screens) -->
-                <div class="ms-5 d-flex gap-3 btn-container">
-                    <button type="button" class="btn btn-primary headertezt"> <i class="ri-login-circle-line fw-bold"></i>&nbsp;<a class="text-white text-decoration-none" href="stdntLogin.html">Student&nbsp;Login</a></button>
-                    <button type="button" class="btn btn-primary headertezt"> <i class="ri-login-circle-line fw-bold"></i> <a class="text-white text-decoration-none" href="#">Admin</a></button>
-                </div>
-            </nav>
+            <!-- Menu icon on small screens -->
+            <div class="menu-icon ms-auto">
+                <i class="ri-menu-line navmenu"  style="font-size: 2rem; margin-left: 60px;"></i>
+            </div>
 
-        </div>
-    </div>
-
-    <div class="slidemenu fixed-top">
-        <ul class="list-unstyled ms-4 ">
-            <li class="m-4 mt-5"> <i class="ri-home-4-line fs-4"></i> &nbsp;&nbsp;<a class="text-decoration-none" href="index.html">HOME</a></li>
-            <hr>
-            <li class="m-4"><i class="ri-group-3-line fs-4"> </i> &nbsp;&nbsp;<a class="text-decoration-none" href="about.html">ABOUT US</a></li>
-            <hr>
-            <li class="m-4"><i class="ri-phone-line  fs-4"></i>&nbsp;&nbsp; <a class="text-decoration-none" href="contact.html">COMPLAINT</a></li>
-            <hr>
-            <li class="m-4"><i class="ri-book-shelf-line fs-4"></i> &nbsp;&nbsp;<a class="text-decoration-none" href="#">COURSES</a></li>
-            <hr>
-            <li class="m-4"><i class="ri-line-chart-fill fs-4"></i> &nbsp;&nbsp;&nbsp;<a class="text-decoration-none" href="#">PLACEMENT</a></li>
-            <hr>
-            <li class="m-4"><i class="ri-customer-service-2-line fs-4"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a class="text-decoration-none" href="contact.html">CONTACT US</a></li>
-            <hr>
-        </ul>
-        <button type="button" class="btn btn-primary ms-5"> <i class="ri-login-circle-line"></i> <a class="text-white text-decoration-none" href="stdntLogin.html">Student&nbsp;Login</a></button> <br>
-                    <button type="button" class="btn btn-primary mt-4 mb-5 ms-5">&nbsp;<i class="ri-login-circle-line"></i><a class="text-white text-decoration-none" href="#">Admin</a></button>
+            <!-- Navbar Links -->
+            <ul class="navbar-nav p-2 fw-bold headertezt">
+                <li class="nav-item me-4">
+                    <a class="text-dark text-decoration-none" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="text-dark text-decoration-none" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="text-dark text-decoration-none" href="contact.html">COMPLAINT</a>
+                </li>
+                <li class="nav-item me-4 dropdown">
+                    <a class="text-dark text-decoration-none dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        COURSES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li> <hr width="70%" style="text-align: center;">
+                        <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li> <hr>
+                        <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li> <hr>
+                        <li><a class="dropdown-item" href="#">ABCHDFEWSF</a></li> <hr>
+                    </ul>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="text-dark text-decoration-none" href="#">PLACEMENT</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="text-dark text-decoration-none" href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+            
+            <!-- Buttons (visible only on large screens) -->
+            <div class="ms-5 d-flex gap-3 btn-container">
+                <button type="button" class="btn btn-primary headertezt"> <i class="ri-login-circle-line fw-bold"></i>&nbsp;<a class="text-white text-decoration-none" href="stdntLogin.html">Student&nbsp;Login</a></button>
+                <button type="button" class="btn btn-primary headertezt"> <i class="ri-login-circle-line fw-bold"></i> <a class="text-white text-decoration-none" href="#">Admin</a></button>
+            </div>
 
            <!-- SOCIAL HANDLES -->
 
-<hr>
-                 &nbsp;&nbsp;&nbsp;<a class=" text-decoration-none text-dark ms-4" href="https://www.instagram.com/myiit_computer_education/" target="_blank"><i class="ri-instagram-line fs-4"></i></a>     &nbsp;&nbsp;
-                 
-                 <a class=" text-decoration-none text-dark ms-4" href="#" target="_blank"> <i class="ri-twitter-x-line fs-4"></i></a>   
+
+             &nbsp;&nbsp;&nbsp;<a class=" text-decoration-none text-dark ms-5 headertezt" href="https://www.instagram.com/myiit_computer_education/" target="_blank"><i class="ri-instagram-line fs-2"></i></a>     &nbsp;&nbsp;
+             
+             <a class=" text-decoration-none text-dark ms-3 headertezt" href="#" target="_blank"> <i class="ri-twitter-x-line fs-2"></i></a>   
+        
+        </nav>
     </div>
+</div>
 
-   <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #9da1a5;
-        }
-        .info-section {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        .info-card {
-            background-color: #ffffff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            flex:  1 calc(33% - 20px);
-            margin: 10px;
-            max-width: calc(33% - 20px);
-        }
-        .info-card i {
-            font-size: 24px;
-            color: #007bff;
-            margin-right: 15px;
-        }
-        .info-card p {
-            margin-bottom: 0;
-        }
-        .form-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-        .form-image {
-            flex: 1 1 50%;
-            background-color: #d9d9d9;
-            border-radius: 8px;
-            text-align: center;
-            line-height: 0;
-            color: #6c757d;
-            font-size: 18px;
-        }
-        .form-container {
-            flex: 1 1 50%;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        @media (max-width: 768px) {
-            .form-section {
-                flex-direction: column;
-            }
-            .form-image {
-                display: none;
-            }
-            .form-banner {
-                display: block;
-                text-align: center;
-                margin-bottom: 15px;
-                color: #6c757d;
-                font-size: 16px;
-            }
-        }
-        @media (min-width: 768px) {
-            .form-banner{
-                display: none;
-            }
-        }
-        @media (max-width: 994px) {
-            .info-section {
-                flex-direction: column;
-            }
-            .info-card {
-                max-width: 100%;
-                margin-bottom: 20px;
-            }
-        }
 
-        .info-card:hover i {
-            animation: shake 0.5s linear infinite;
-        }
+<div class="slidemenu fixed-top">
+    <ul class="list-unstyled ms-4 ">
+        <li class="m-4 mt-5"> <i class="ri-home-4-line fs-4"></i> &nbsp;&nbsp;<a class="text-decoration-none" href="index.html">HOME</a></li>
+        <hr>
+        <li class="m-4"><i class="ri-group-3-line fs-4"> </i> &nbsp;&nbsp;<a class="text-decoration-none" href="about.html">ABOUT US</a></li>
+        <hr>
+        <li class="m-4"><i class="ri-phone-line  fs-4"></i>&nbsp;&nbsp; <a class="text-decoration-none" href="contact.html">COMPLAINT</a></li>
+        <hr>
+        <li class="m-4"><i class="ri-book-shelf-line fs-4"></i> &nbsp;&nbsp;<a class="text-decoration-none" href="#">COURSES</a></li>
+        <hr>
+        <li class="m-4"><i class="ri-line-chart-fill fs-4"></i> &nbsp;&nbsp;&nbsp;<a class="text-decoration-none" href="#">PLACEMENT</a></li>
+        <hr>
+        <li class="m-4"><i class="ri-customer-service-2-line fs-4"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a class="text-decoration-none" href="contact.html">CONTACT&nbspUS</a></li>
+        <hr>
+    </ul>
+    <button type="button" class="btn btn-primary ms-5"> <i class="ri-login-circle-line"></i> <a class="text-white text-decoration-none" href="stdntLogin.html">Student&nbsp;Login</a></button> <br>
+                <button type="button" class="btn btn-primary mt-4 mb-5 ms-5">&nbsp;<i class="ri-login-circle-line"></i><a class="text-white text-decoration-none" href="#">Admin</a></button>
+    <hr> 
+      <!-- SOCIAL HANDLES -->
 
-        @keyframes shake {
-            0%, 100% {
-                transform: translateX(0);
-            }
-            25% {
-                transform: translateX(-5px);
-            }
-            50% {
-                transform: translateX(5px);
-            }
-            78% {
-                transform: translateX(-5px);
-            }
-        }
-    </style>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
+             &nbsp;&nbsp;&nbsp;<a class=" text-decoration-none text-dark ms-4" href="https://www.instagram.com/myiit_computer_education/" target="_blank"><i class="ri-instagram-line fs-4"></i></a>     &nbsp;&nbsp;
+             
+             <a class=" text-decoration-none text-dark ms-4" href="#" target="_blank"> <i class="ri-twitter-x-line fs-4"></i></a>   
+</div>
 
-  <body>
+
+
+<!--------------- INFO SECTION --------------->
+
+
     <div class="container-fluid">
         <img class="w-100" src="ContactusBanner.png" alt="">
     </div>
@@ -365,15 +284,15 @@ $(document).ready(function(){
             <div class="info-card">
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
-                    <h6>Address</h6>
-                    <p>Hall no-4, Old City Public School,<br>Near State Bank of India,<br>Jais, Uttar Pradesh 229305</p>
+                    <h6><a class="text-decoration-none text-dark" href="#maps">Address</a></h6>
+                    <p><a class="text-decoration-none text-dark" href="#maps">Hall no-4, Old City Public School,<br>Near State Bank of India,<br>Jais, Uttar Pradesh 229305</a></p>
                 </div>
             </div>
             <div class="info-card">
                 <i class="fas fa-phone-alt"></i>
                 <div>
                     <h6>Phone</h6>
-                    <p>7985953987</p>
+                    <p><a class="" href="tel:7985953987">7985953987</a></p>
                 </div>
             </div>
             <div class="info-card">
@@ -398,23 +317,24 @@ $(document).ready(function(){
                     
                     <!-- Right Side: Form -->
 
-                        <div class="form-container">
-                            <h2>Enquiry Form</h2>
+                        <div class="form-container" style="background-color: #9abcda;">
+                            <h2 class="fw-bold">Enquiry Form</h2> <br>
                             <form>
                                 <div class="form-row">
+                                    <div class="row">
                                     <div class="form-group col-md-6">
                                         <label for="name">Name</label>
                                         <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                                    </div>
+                                    </div> 
                                     <div class="form-group col-md-6">
                                         <label for="phone">Mobile Number</label>
                                         <input type="tel" class="form-control" id="phone" placeholder="Enter your mobile number">
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                </div>
+                                </div>  <br> <hr>
                                 <div class="form-group">
                                     <label for="studyType">Study Type</label>
                                     <select class="form-control" id="studyType">
@@ -425,11 +345,11 @@ $(document).ready(function(){
                                         <option value="Tally">Tally</option>
                                         <option value="Back-end Development">Back-end Development</option>
                                     </select>
-                                </div>
+                                </div> 
                                 <div class="form-group">
                                     <label for="message">Message</label>
                                     <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
-                                </div>
+                                </div> <br>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
@@ -439,18 +359,23 @@ $(document).ready(function(){
 
     <!-- Additional Details Section -->
     <div class="container-fluid mt-5">
-        <p><strong>M-IIT </strong> is a premier computer training institute providing top-tier courses to students in the field of technology. The institute offers a variety of courses including <strong>Web Development</strong>, <strong>Excel Training</strong>, <strong>Digital Marketing</strong>, <strong>Back-end Programming</strong>, and more.</p>
-        <h6>Opening Hours:</h6>
+        <p class="alert alert-dark text-secondary"><strong>M-IIT </strong> is a premier computer training institute providing top-tier courses to students in the field of technology. The institute offers a variety of courses including <strong>Web Development</strong>, <strong>Excel Training</strong>, <strong>Digital Marketing</strong>, <strong>Back-end Programming</strong>, and more.</p>
+        <div class="alert alert-success">
+            <h6>Opening Hours:</h6>
         <p>Monday to Saturday: <strong>10:00 AM - 5:00 PM</strong></p>
-        <p>(Sunday): Closed</p>
+        </div>
+    
+        <p class="alert alert-danger">(Sunday): Closed</p>
     </div>
+
+     <hr class="text-dark">
 
     <!-- Google Maps & Image Carousel Section -->
     <div class="container-fluid">
         <div class="row ">
             <!-- Google Maps -->
-            <div class="col-md-6">
-                <h5>Find Us on Google Maps</h5>
+            <div class="col-md-6" id="maps">
+                <h4 class="mt-5">Find Us on Google Maps</h4>
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.0319086107347!2d81.54199257532656!3d26.260627787809458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a554db6d8a79b%3A0xda1d7c310d1cdc5f!2sMY-IIT%20Computer%20Training%20Institute!5e0!3m2!1sen!2sin!4v1737181631804!5m2!1sen!2sin" 
                     width="100%" 
@@ -459,11 +384,12 @@ $(document).ready(function(){
                     allowfullscreen="" 
                     loading="lazy">
                 </iframe>
-            </div>
+            </div> 
+
 
                <!-- Image Carousel -->
             <div class="col-md-6">
-                <h5>Explore Our Facility</h5>
+                <h5 class="mt-5">Explore Our Facility</h5>
                 <div id="imageCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -507,7 +433,7 @@ $(document).ready(function(){
 
 
         <div class="col-md-3 bg-dark text-white">
-              <div class="col-md-12 m-2"><p><strong><i class="ri-links-fill"></i> Importent links</strong></p>
+              <div class="col-md-12 m-2"><p><strong><i class="ri-links-fill"></i> Important links</strong></p>
             
             <ul>
                 <li>Home</li>
@@ -526,7 +452,7 @@ $(document).ready(function(){
 
        
         <div class="col-md-3 bg-dark text-white">
-            <div class="col-md-12 m-2"><p><strong><i class="ri-links-fill"></i> Importent links</strong></p>
+            <div class="col-md-12 m-2"><p><strong><i class="ri-links-fill"></i> Important links</strong></p>
           
           <ul>
               <li>Home</li>
@@ -555,9 +481,59 @@ $(document).ready(function(){
 
     </div>
   </div>
->
+
     </div>
 </div>
-
 </body>
-</html>
+
+<script>
+    $(document).ready(function(){
+    $(".cc").click(function(){
+    $(".dc").slideToggle(500);
+    });
+    });
+    </script>
+
+<script>
+$(document).ready(function(){
+    // Show the scroll-to-top button when user scrolls 100px down
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('#scroll-to-top').fadeIn();
+        } else {
+            $('#scroll-to-top').fadeOut();
+        }
+    });
+
+    // Smooth scrolling when clicking the arrow
+    $('#scroll-to-top').click(function() {
+        $('html, body').animate({ scrollTop: 100 }, 'slow');
+        return false;
+    });
+});
+
+</script>
+
+<style>
+    .slidemenu{
+    width: 210px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.925);
+    position: fixed;
+    margin-top: 62px;
+    display: none;
+    
+}
+
+.navmenu{
+  margin-left: 50px;
+}
+
+
+.hr{
+  size: 20px;
+}
+
+</style>
+
+</html>     
