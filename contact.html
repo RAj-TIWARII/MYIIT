@@ -275,13 +275,33 @@ $(document).ready(function(){
 
 
 
+<!---------------------  # HERO SECTIONJ ------------------>
 
-    <div class="container-fluid">
-        <img class="w-100" src="ContactusBanner.png" alt="">
-    </div>
+        <img class="w-100 Desktopbanner" src="ContactusBanner.png" alt="">
+   
 
+    
+        <img class="w-100 MobileBanner" src="MobileBanner.png" alt="">
+
+  <style>
+@media (max-width: 570px) {
+    .Desktopbanner {
+        display: none;
+    }
+}
+
+@media (min-width: 571px) {
+    .MobileBanner {
+        display: none;
+    }
+}
+  </style>
+
+
+
+ <!-- Info Section -->
     <div class="container mt-5">
-        <!-- Info Section -->
+       
         <div class="info-section">
             <div class="info-card">
                 <i class="fas fa-map-marker-alt"></i>
@@ -323,9 +343,9 @@ $(document).ready(function(){
                         <div class="row justify-content-center">
                             <div class="col-lg-10">
                                 <div class="row form-container">
-                                    <!-- Left Side: Form -->
+                                    <!-- Left Side: Form  -->
                                     <div class="col-md-6 px-4">
-                                        <h2 class="mb-4">Enquiry Form</h2>
+                                        <h2 class="mb-4 mt-3">Enquiry Form</h2>
                                         <form>
                                             <div class="mb-3">
                                                 <label for="name" class="form-label">Name</label>
@@ -359,14 +379,30 @@ $(document).ready(function(){
                                         </form>
                                     </div>
                 
-                                    <!-- Right Side: Image Section -->
+                                    <!-- Right Side: Image Section  -->
                                     <div class="col-md-6   p-3 py-4" style="margin-top: 130px">
-                                        <img class="w-100" src="https://i.pinimg.com/originals/d8/56/10/d856107dc4d1dcc5f1bb3bdfa6d25f26.gif" alt="Placeholder Image" class="img-fluid rounded">
+                                        <img class="w-100 formbanner" src="https://i.pinimg.com/originals/d8/56/10/d856107dc4d1dcc5f1bb3bdfa6d25f26.gif" alt="Placeholder Image" class="img-fluid rounded">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <style>
+         
+
+                        @media (max-width: 768px) {
+                            .formbanner {
+                                display: block;
+                            }
+                        }
+
+                        @media (max-width: 769px) {
+                            .formbanner {
+                                display: none;
+                            }
+                        }
+                    </style>  
 
 
                 
@@ -408,13 +444,13 @@ $(document).ready(function(){
                 <div id="imageCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="Images/FacilityImg1.png" class="d-block w-100" alt="Image 1">
+                            <img src="FacilityImg1.png" class="d-block w-100" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="Images/FacilityImg2.png" class="d-block w-100" alt="Image 2">
+                            <img src="FacilityImg2.png" class="d-block w-100" alt="Image 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="Images/FacilityImg3.png" class="d-block w-100" alt="Image 3">
+                            <img src="FacilityImg3.png" class="d-block w-100" alt="Image 3">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
@@ -439,7 +475,7 @@ $(document).ready(function(){
 <!---------------    # FOOTER CONTACTS       ------------------->
 
 <div class="container-fluid bg-dark mt-5">
-    <div class="row">
+    <div class="row no-gutters">
         <div class="col-md-3 bg-dark"> 
                <div class="col-md-12"> <img class="m-2" class="w-50" src="Images/headicon.png" alt=""> <p class="text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>  </div>
              </div>
